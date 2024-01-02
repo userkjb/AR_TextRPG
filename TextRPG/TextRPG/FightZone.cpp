@@ -27,7 +27,9 @@ void FightZone::In(Player& _Player)
 
 bool FightZone::FightLogic(FightUnit& _First, FightUnit& _Second, FightUnit& _Top, FightUnit& _Bot)
 {
-	int Input = _getch();
+	{
+		int Input = _getch();
+	}
 
 	system("cls");
 	_Second.DamageLogic(_First);
@@ -35,7 +37,31 @@ bool FightZone::FightLogic(FightUnit& _First, FightUnit& _Second, FightUnit& _To
 	_Bot.StatusRender();
 	_First.DamageRender();
 	
+	if (true == _Second.IsDeath())
+	{
+		printf_s("게임 종료\n");
+		return true;
+	}
 
+	{
+		int Input = _getch();
+	}
+	system("cls");
+	_First.DamageLogic(_Second);
+	_Top.StatusRender();
+	_Bot.StatusRender();
+	_First.DamageRender();
+	_Second.DamageRender();
+	if (true == _First.IsDeath())
+	{
+		printf_s("게임 종료\n");
+		return true;
+	}
+
+	{
+		int Input = _getch();
+	}
+	system("cls");
 
 	return false;
 }
