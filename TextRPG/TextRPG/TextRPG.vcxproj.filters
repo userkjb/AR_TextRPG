@@ -12,10 +12,22 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="StatusUnit.cpp" />
+    <ClCompile Include="Town.cpp" />
+    <ClCompile Include="FightZone.cpp" />
+    <ClCompile Include="ZoneBase.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+    <ClCompile Include="NameUnit.cpp" />
+    <ClCompile Include="FightUnit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="StatusUnit.h" />
+    <ClInclude Include="Town.h" />
+    <ClInclude Include="FightZone.h" />
+    <ClInclude Include="ZoneBase.h" />
+    <ClInclude Include="Weapon.h" />
+    <ClInclude Include="NameUnit.h" />
+    <ClInclude Include="FightUnit.h" />
   </ItemGroup>
 </Project>
