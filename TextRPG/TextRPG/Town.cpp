@@ -21,6 +21,8 @@ void Town::In(Player& _Player)
 		case '2':
 			Heal(_Player);
 			break;
+		case'3' :
+			return;
 		default:
 			break;
 		}
@@ -58,6 +60,16 @@ void Town::WeaponUp(Player& _Player)
 				break;
 			}
 
+			if (EquipUp >= 30)
+			{
+				printf_s("최종 강화 상태라 더이상 강화할 수 없습니다.\n");
+				int Test = _getch();
+				break;
+			}
+
+			// money ----
+			_Player.AddGold(-EquipUpGold);
+
 			int Random = rand() % 100;
 			if (Random != 0)
 			{
@@ -82,7 +94,7 @@ void Town::WeaponUp(Player& _Player)
 			break;
 		}
 		case '2':
-			break;
+			return;
 		default :
 			break;
 		}

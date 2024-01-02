@@ -24,7 +24,7 @@ public :
 	void RandomGold(int _Min, int _Max);
 
 protected :
-	int Hp = 0;
+	int Hp = 100;
 	int MaxHp = 100;
 	int MinAtt = 10;
 	int MaxAtt = 20;
