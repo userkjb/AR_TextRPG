@@ -16,7 +16,7 @@ public :
 		Gold += _Gold;
 	}
 
-	inline int GetCold()
+	inline int GetGold()
 	{
 		return Gold;
 	}

@@ -10,17 +10,36 @@ FightZone::FightZone()
 
 void FightZone::In(Player& _Player)
 {
+	NewMonster.HpReset();
+	NewMonster.RandomGold(1000, 10000);
+
 	while (true)
 	{
+		_Player.StatusRender();
+		NewMonster.StatusRender();
+
 		bool IsEnd = false;
 
 		if (_Player.GetRandomSpeed() >= NewMonster.GetRandomSpeed())
 		{
 			printf_s("플레이어의 선공\n");
+			IsEnd = FightLogic(_Player, NewMonster, _Player, NewMonster);
 		}
 		else
 		{
 			printf_s("몬스터의 선공\n");
+			IsEnd = FightLogic(_Player, NewMonster, _Player, NewMonster);
+		}
+
+		if (IsEnd == true)
+		{
+			if (_Player.IsDeath() == false)
+			{
+				int MonsterGold = NewMonster.GetGold();
+				printf_s("플레이어가 %d 골드를 벌었습니다.\n", MonsterGold);
+				_Player.AddGold(MonsterGold);
+				int test = _getch();
+			}
 		}
 	}
 }
