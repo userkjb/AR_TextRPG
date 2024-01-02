@@ -1,6 +1,11 @@
 ﻿#include <iostream>
 
+#include "Player.h"
+#include "Monster.h"
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    Player NewPlayer = Player();
+    Monster NewMonster = Monster();
+
 }
