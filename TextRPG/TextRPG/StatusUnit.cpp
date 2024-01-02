@@ -24,12 +24,17 @@ void StatusUnit::StatusRender()
 
 void StatusUnit::RandomGold(int _Min, int _Max)
 {
-	Gold = (rand() % (_Max - _Min)) + _Min;
+	Gold = RandomValue(_Min, _Max);
 }
 
 void StatusUnit::RandomExp(int _Min, int _Max)
 {
-	Exp = (rand() % (_Max - _Min)) + _Min;
+	Exp = RandomValue(_Min, _Max);
+}
+
+int StatusUnit::RandomValue(int _Min, int _Max)
+{
+	return (rand() % (_Max - _Min)) + _Min;
 }
 
 void StatusUnit::StatusRenderStart()
