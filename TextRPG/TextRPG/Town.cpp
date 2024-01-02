@@ -24,3 +24,8 @@ void Town::In(Player& _Player)
 		system("cls");
 	}
 }
+
+void Town::WeaponUp(Player& _Player)
+{
+
+}
