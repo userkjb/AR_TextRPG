@@ -21,6 +21,11 @@ public :
 		return Gold;
 	}
 
+	inline int GetExp()
+	{
+		return Exp;
+	}
+
 	void StatusInit(int _Hp, int _MinAtt, int _MaxAtt)
 	{
 		SetMaxHp(_Hp);
