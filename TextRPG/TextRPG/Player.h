@@ -1,9 +1,9 @@
 #pragma once
 
-#include "StatusUnit.h"
+#include "FightUnit.h"
 #include "Weapon.h"
 
-class Player : public StatusUnit
+class Player : public FightUnit
 {
 public :
 	Player();

@@ -1,9 +1,9 @@
 #pragma once
 
-#include "StatusUnit.h"
+#include "FightUnit.h"
 
 
-class Monster : public StatusUnit
+class Monster : public FightUnit
 {
 
 };

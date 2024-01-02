@@ -14,6 +14,6 @@ void FightZone::In(Player& _Player)
 	{
 		bool IsEnd = false;
 
-		
+		//_Player.Get
 	}
 }
