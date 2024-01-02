@@ -66,6 +66,7 @@ public :
 
 
 	void RandomGold(int _Min, int _Max);
+	void RandomExp(int _Min, int _Max);
 
 	virtual void StatusRenderStart();
 	virtual void StatusRenderBase();

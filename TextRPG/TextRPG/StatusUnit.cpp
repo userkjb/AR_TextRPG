@@ -27,6 +27,11 @@ void StatusUnit::RandomGold(int _Min, int _Max)
 	Gold = (rand() % (_Max - _Min)) + _Min;
 }
 
+void StatusUnit::RandomExp(int _Min, int _Max)
+{
+	Exp = (rand() % (_Max - _Min)) + _Min;
+}
+
 void StatusUnit::StatusRenderStart()
 {
 }
