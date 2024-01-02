@@ -21,6 +21,40 @@ public :
 		return Gold;
 	}
 
+	void StatusInit(int _Hp, int _MinAtt, int _MaxAtt)
+	{
+		SetMaxHp(_Hp);
+		SetHp(_Hp);
+		SetMinAtt(_MinAtt);
+		SetMaxAtt(_MaxAtt);
+	}
+
+	void SetHp(int _Value)
+	{
+		// ¹æ¾î!
+		if (MaxHp < _Value)
+		{
+			_Value = MaxHp;
+		}
+		Hp = _Value;
+	}
+
+	void SetMaxHp(int _Value)
+	{
+		MaxHp = _Value;
+	}
+
+	void SetMinAtt(int _Value)
+	{
+		MinAtt = _Value;
+	}
+
+	void SetMaxAtt(int _Value)
+	{
+		MaxAtt = _Value;
+	}
+
+
 	void RandomGold(int _Min, int _Max);
 
 protected :

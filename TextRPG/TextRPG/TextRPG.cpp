@@ -16,7 +16,11 @@ int main()
     NewPlayer.SetName("Player");
     Monster NewMonster = Monster();
 
-    FightZone NewFightZone;
+    FightZone NewFightZone[3];
+    NewFightZone[0].NewMonster.StatusInit(100, 5, 15);
+    NewFightZone[1].NewMonster.StatusInit(200, 10, 20);
+    NewFightZone[2].NewMonster.StatusInit(300, 20, 40);
+
     Town NewTownZone;
 
     while (true)
@@ -24,7 +28,9 @@ int main()
 
         printf_s("어디로 가시겠습니까?\n");
         printf_s("1. 마을.\n");
-        printf_s("2. 사냥터.\n");
+        printf_s("2. 초급 사냥터.\n");
+        printf_s("3. 중급 사냥터.\n");
+        printf_s("4. 고급 사냥터.\n");
         
         int Select = _getch();
         system("cls");
@@ -35,7 +41,10 @@ int main()
             NewTownZone.In(NewPlayer);
             break;
         case '2' :
-            NewFightZone.In(NewPlayer);
+        case '3' :
+        case '4' :
+            int FightSelect = Select - '2';
+            NewFightZone[FightSelect].In(NewPlayer);
             break;
         default :
             break;
