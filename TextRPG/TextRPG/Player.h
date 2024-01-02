@@ -9,6 +9,5 @@ public :
 	Player();
 
 	Weapon Weapon;
-private :
 };
 
