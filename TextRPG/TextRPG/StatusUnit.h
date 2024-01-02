@@ -11,6 +11,18 @@ public :
 		Hp = MaxHp;
 	}
 
+	inline void AddGold(int _Gold)
+	{
+		Gold += _Gold;
+	}
+
+	inline int GetCold()
+	{
+		return Gold;
+	}
+
+	void RandomGold(int _Min, int _Max);
+
 protected :
 	int Hp = 0;
 	int MaxHp = 100;
@@ -19,4 +31,3 @@ protected :
 	int Speed = 20;
 	int Gold = 0;
 };
-

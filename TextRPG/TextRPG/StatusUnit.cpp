@@ -8,4 +8,11 @@ void StatusUnit::StatusRender()
 	{
 		printf_s("-");
 	}
+	printf_s("\n");
+
+}
+
+void StatusUnit::RandomGold(int _Min, int _Max)
+{
+	Gold = (rand() % (_Max - _Min)) + _Min;
 }
