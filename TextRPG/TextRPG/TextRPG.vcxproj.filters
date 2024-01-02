@@ -9,5 +9,13 @@
     <ClCompile Include="TextRPG.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="StatusUnit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="StatusUnit.h" />
   </ItemGroup>
 </Project>
