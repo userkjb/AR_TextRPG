@@ -77,3 +77,10 @@ void Town::WeaponUp(Player& _Player)
 		}
 	}
 }
+
+void Town::Heal(Player& _Player)
+{
+	_Player.HpReset();
+	printf_s("플레이어는 치료되었습니다.");
+	int Select = _getch();
+}

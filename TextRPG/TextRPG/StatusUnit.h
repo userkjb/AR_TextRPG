@@ -6,6 +6,11 @@ class StatusUnit : public NameUnit
 public :
 	void StatusRender();
 
+	inline void HpReset()
+	{
+		Hp = MaxHp;
+	}
+
 protected :
 	int Hp = 0;
 	int MaxHp = 100;

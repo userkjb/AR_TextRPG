@@ -8,5 +8,6 @@ public :
 	void In(Player& _Player) override;
 
 	void WeaponUp(Player& _Player);
+	void Heal(Player& _Player);
 };
 
