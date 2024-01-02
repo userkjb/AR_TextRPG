@@ -68,4 +68,5 @@ protected :
 	int MaxAtt = 20;
 	int Speed = 20;
 	int Gold = 0;
+	int Exp = 0;
 };
