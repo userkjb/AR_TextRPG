@@ -1,5 +1,9 @@
 #pragma once
-class Monster
+
+#include "StatusUnit.h"
+
+
+class Monster : public StatusUnit
 {
 };
 
