@@ -49,6 +49,15 @@ void Town::WeaponUp(Player& _Player)
 		{
 		case '1' :
 		{
+			int EquipUpGold = (EquipUp + 1) * 1000;
+
+			if (EquipUpGold > _Player.GetGold())
+			{
+				printf_s("돈이 부족하여 강화를 할 수 없습니다.\n");
+				int Test = _getch();
+				break;
+			}
+
 			int Random = rand() % 100;
 			if (Random != 0)
 			{
