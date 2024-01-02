@@ -14,3 +14,8 @@ void Player::FightEnd(FightUnit& _Other)
 	AddGold(Gold);
 }
 
+void Player::StatusRenderStart()
+{
+	printf_s("·¹º§ %d\n", Level);
+}
+

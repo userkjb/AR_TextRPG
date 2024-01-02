@@ -12,6 +12,8 @@ public :
 
 	void FightEnd(FightUnit& _Other) override;
 
+	void StatusRenderStart() override;
+
 private :
 	int Level = 1;
 	int LevelUpExp = 0;

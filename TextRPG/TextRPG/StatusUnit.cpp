@@ -8,6 +8,7 @@ void StatusUnit::StatusRender()
 	{
 		printf_s("-");
 	}
+
 	printf_s("\n");
 	StatusRenderStart();
 	StatusRenderBase();
@@ -17,6 +18,7 @@ void StatusUnit::StatusRender()
 	{
 		printf_s("-");
 	}
+
 	printf_s("\n");
 }
 
