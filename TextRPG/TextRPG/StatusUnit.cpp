@@ -9,7 +9,9 @@ void StatusUnit::StatusRender()
 		printf_s("-");
 	}
 	printf_s("\n");
-
+	printf_s("공격력 %d ~ %d\n", MinAtt, MaxAtt);
+	printf_s("체력 %d\n", Hp);
+	printf_s("소지금 %d\n", Gold);
 }
 
 void StatusUnit::RandomGold(int _Min, int _Max)
