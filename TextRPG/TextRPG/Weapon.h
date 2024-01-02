@@ -1,5 +1,7 @@
 #pragma once
-class Weapon
+#include "NameUnit.h"
+
+class Weapon : public NameUnit
 {
 };
 
