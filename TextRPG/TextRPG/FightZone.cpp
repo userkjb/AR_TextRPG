@@ -10,8 +10,9 @@ FightZone::FightZone()
 
 void FightZone::In(Player& _Player)
 {
-	NewMonster.HpReset();
-	NewMonster.RandomGold(1000, 10000);
+	NewMonster.FightStart(_Player);
+	_Player.FightStart(NewMonster);
+	
 
 	while (true)
 	{
@@ -35,6 +36,9 @@ void FightZone::In(Player& _Player)
 		{
 			if (_Player.IsDeath() == false)
 			{
+				NewMonster.FightEnd(_Player);
+				_Player.FightEnd(NewMonster);
+
 				int MonsterGold = NewMonster.GetGold();
 				printf_s("플레이어가 %d 골드를 벌었습니다.\n", MonsterGold);
 				_Player.AddGold(MonsterGold);
