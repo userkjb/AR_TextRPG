@@ -16,8 +16,10 @@ void Town::In(Player& _Player)
 		switch (Select)
 		{
 		case '1':
+			WeaponUp(_Player);
 			break;
 		case '2':
+			Heal(_Player);
 			break;
 		default:
 			break;
