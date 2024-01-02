@@ -14,6 +14,13 @@ void FightZone::In(Player& _Player)
 	{
 		bool IsEnd = false;
 
-		//_Player.Get
+		if (_Player.GetRandomSpeed() >= NewMonster.GetRandomSpeed())
+		{
+			printf_s("플레이어의 선공\n");
+		}
+		else
+		{
+			printf_s("몬스터의 선공\n");
+		}
 	}
 }
