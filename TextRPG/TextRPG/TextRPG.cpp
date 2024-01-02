@@ -14,8 +14,7 @@ int main()
 
     Player NewPlayer = Player();
     NewPlayer.SetName("Player");
-    Monster NewMonster = Monster();
-
+    
     FightZone NewFightZone[3];
     NewFightZone[0].NewMonster.StatusInit(100, 5, 15);
     NewFightZone[1].NewMonster.StatusInit(200, 10, 20);
