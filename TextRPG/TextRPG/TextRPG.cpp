@@ -42,9 +42,11 @@ int main()
         case '2' :
         case '3' :
         case '4' :
+        {
             int FightSelect = Select - '2';
             NewFightZone[FightSelect].In(NewPlayer);
             break;
+        }
         default :
             break;
         }
