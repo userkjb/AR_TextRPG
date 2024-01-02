@@ -1,7 +1,11 @@
 #include "FightZone.h"
+#include <iostream>
+#include <conio.h>
+#include "Player.h"
 
 FightZone::FightZone()
 {
+	NewMonster.SetName("Monster");
 }
 
 void FightZone::In(Player& _Player)
