@@ -1,10 +1,10 @@
 #pragma once
-class StatusUnit
+#include "NameUnit.h"
+
+class StatusUnit : public NameUnit
 {
 public :
 	void StatusRender();
-
-	void SetName(const char* _Name);
 
 protected :
 	char Name[100] = "None";
