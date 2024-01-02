@@ -26,6 +26,11 @@ public :
 		return Exp;
 	}
 
+	inline void AddExp(int _Exp)
+	{
+		Exp += _Exp;
+	}
+
 	void StatusInit(int _Hp, int _MinAtt, int _MaxAtt)
 	{
 		SetMaxHp(_Hp);
