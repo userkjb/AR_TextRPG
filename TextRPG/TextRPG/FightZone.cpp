@@ -24,3 +24,18 @@ void FightZone::In(Player& _Player)
 		}
 	}
 }
+
+bool FightZone::FightLogic(FightUnit& _First, FightUnit& _Second, FightUnit& _Top, FightUnit& _Bot)
+{
+	int Input = _getch();
+
+	system("cls");
+	_Second.DamageLogic(_First);
+	_Top.StatusRender();
+	_Bot.StatusRender();
+	_First.DamageRender();
+	
+
+
+	return false;
+}

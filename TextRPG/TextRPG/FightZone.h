@@ -10,5 +10,8 @@ public :
 	Monster NewMonster = Monster();
 
 	void In(class Player& _Player);
+
+private :
+	bool FightLogic(FightUnit& _First, FightUnit& _Second, FightUnit& _Top, FightUnit& _Bot);
 };
 
