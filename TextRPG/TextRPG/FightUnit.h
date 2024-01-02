@@ -19,6 +19,9 @@ public :
 
 	void DamageRender();
 
+	virtual void FightStart(FightUnit& _Other) {}
+	virtual void FightEnd(FightUnit& _Other) {}
+
 protected :
 	int CurDamage = 0;
 };
