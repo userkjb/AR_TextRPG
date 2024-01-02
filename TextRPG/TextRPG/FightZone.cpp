@@ -39,9 +39,6 @@ void FightZone::In(Player& _Player)
 				NewMonster.FightEnd(_Player);
 				_Player.FightEnd(NewMonster);
 
-				int MonsterGold = NewMonster.GetGold();
-				printf_s("플레이어가 %d 골드를 벌었습니다.\n", MonsterGold);
-				_Player.AddGold(MonsterGold);
 				int test = _getch();
 			}
 		}
