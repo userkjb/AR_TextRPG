@@ -41,6 +41,8 @@ void FightZone::In(Player& _Player)
 
 				int test = _getch();
 			}
+
+			return;
 		}
 	}
 }
