@@ -5,5 +5,6 @@
 
 class Monster : public StatusUnit
 {
+
 };
 

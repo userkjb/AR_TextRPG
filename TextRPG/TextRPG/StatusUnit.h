@@ -4,6 +4,7 @@ class StatusUnit
 public :
 
 protected :
+	char Name[100] = "None";
 	int Hp = 0;
 	int MaxHp = 100;
 	int MinAtt = 10;
