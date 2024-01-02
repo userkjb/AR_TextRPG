@@ -16,6 +16,6 @@ void Player::FightEnd(FightUnit& _Other)
 
 void Player::StatusRenderStart()
 {
-	printf_s("레벨 %d\n", Level);
+	printf_s("레벨 %d (%d / %d)\n", Level, GetExp(), LevelUpExp);
 }
 
