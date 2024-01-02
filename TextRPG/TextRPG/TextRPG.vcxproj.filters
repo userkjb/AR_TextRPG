@@ -4,30 +4,78 @@
     <Filter Include="Core">
       <UniqueIdentifier>{9bc3f7dc-68bc-474f-8e49-734b073b2f2d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{6a13f562-99a8-46d5-ab92-867e4e734a71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{3dd53568-3ed4-49a6-8185-52774cbf8d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{6618ab52-ed51-4ab4-b26b-7dff7dbbeb79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{22bfca99-ffa6-417c-ac17-52e5bcdfac1b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TextRPG.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Monster.cpp" />
-    <ClCompile Include="StatusUnit.cpp" />
-    <ClCompile Include="Town.cpp" />
-    <ClCompile Include="FightZone.cpp" />
-    <ClCompile Include="ZoneBase.cpp" />
-    <ClCompile Include="Weapon.cpp" />
-    <ClCompile Include="NameUnit.cpp" />
-    <ClCompile Include="FightUnit.cpp" />
+    <ClCompile Include="Player.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="FightUnit.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusUnit.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NameUnit.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="FightZone.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Town.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="ZoneBase.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Monster.h" />
-    <ClInclude Include="StatusUnit.h" />
-    <ClInclude Include="Town.h" />
-    <ClInclude Include="FightZone.h" />
-    <ClInclude Include="ZoneBase.h" />
-    <ClInclude Include="Weapon.h" />
-    <ClInclude Include="NameUnit.h" />
-    <ClInclude Include="FightUnit.h" />
+    <ClInclude Include="Player.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="FightUnit.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusUnit.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NameUnit.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="FightZone.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Town.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="ZoneBase.h">
+      <Filter>Map</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
