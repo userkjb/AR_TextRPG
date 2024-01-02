@@ -57,6 +57,10 @@ public :
 
 	void RandomGold(int _Min, int _Max);
 
+	virtual void StatusRenderStart();
+	virtual void StatusRenderBase();
+	virtual void StatusRenderEnd();
+
 protected :
 	int Hp = 100;
 	int MaxHp = 100;

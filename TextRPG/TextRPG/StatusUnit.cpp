@@ -9,12 +9,33 @@ void StatusUnit::StatusRender()
 		printf_s("-");
 	}
 	printf_s("\n");
-	printf_s("공격력 %d ~ %d\n", MinAtt, MaxAtt);
-	printf_s("체력 %d\n", Hp);
-	printf_s("소지금 %d\n", Gold);
+	StatusRenderStart();
+	StatusRenderBase();
+	StatusRenderEnd();
+
+	for (int i = 0; i < 50; i++)
+	{
+		printf_s("-");
+	}
+	printf_s("\n");
 }
 
 void StatusUnit::RandomGold(int _Min, int _Max)
 {
 	Gold = (rand() % (_Max - _Min)) + _Min;
+}
+
+void StatusUnit::StatusRenderStart()
+{
+}
+
+void StatusUnit::StatusRenderBase()
+{
+	printf_s("공격력 %d ~ %d\n", MinAtt, MaxAtt);
+	printf_s("체력 %d\n", Hp);
+	printf_s("소지금 %d\n", Gold);
+}
+
+void StatusUnit::StatusRenderEnd()
+{
 }
